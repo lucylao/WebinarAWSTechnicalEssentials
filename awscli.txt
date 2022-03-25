@@ -1,0 +1,22 @@
+# AWS CLI Commands (Case-Sensitive)
+
+aws ec2 describe-instances --query "Reservations[*].Instances[*].{Name:Tags[?Key=='Name']|[0].Value}" --output table
+
+aws s3 mb s3://test1234
+aws s3 cp test1.txt s3://test1234
+aws s3 ls
+
+aws lambda list-functions --query "Functions[*].FunctionName" 
+
+aws ec2 describe-subnets --query Subnets[*].VpcId
+
+aws ec2 describe-instances --query 'Reservations[].Instances[].[Tags[?Key==`Name`].Value[]
+
+chmod +rwx <filename>
+
+aws s3 ls awstecess01/data/
+
+aws s3 cp s3://awstecess01/data/employees.csv .
+
+
+
